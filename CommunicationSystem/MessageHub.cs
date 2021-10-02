@@ -8,7 +8,7 @@ namespace CommunicationSystem
 {
     public abstract class MessageHub
     {
-        public abstract void Register(TeamMember member);
+        public abstract void RegisterSingle(TeamMember member);
         public abstract void Send(string from, string message);
 
     }
