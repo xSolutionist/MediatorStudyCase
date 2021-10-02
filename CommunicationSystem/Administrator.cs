@@ -16,7 +16,7 @@ namespace CommunicationSystem
         public override void Recieve(string from, string message)
         {
             
-            Console.WriteLine($"{this.name} ({nameof(Administrator)}) has recieved: ");
+            Console.Write($"{this.name} ({nameof(Administrator)}) has recieved ");
             base.Recieve(from, message);
         }
     }

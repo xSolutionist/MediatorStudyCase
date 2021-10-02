@@ -26,9 +26,7 @@ namespace CommunicationSystem
                                     ServerFredde, MarkupFredde, Philip);
 
             Henrik.Send("Hej, standupen är klockan 9 imorgon btw. Ps: AW på fredag.");
-            Isac.Send("Härligt! ses där");
-
-            Console.ReadLine();
+            ServerFredde.Send("D u n d e r");
         }
     }
 }

@@ -25,16 +25,13 @@ namespace CommunicationSystem
 
         public void Send(string message)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
             this.messageHub.Send(this.name, message);
         }
 
         public virtual void Recieve(string from, string message)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"From {from}: '{message}");
+            Console.WriteLine($"From {from} : '{message}");
         }
-
 
     }
 }
