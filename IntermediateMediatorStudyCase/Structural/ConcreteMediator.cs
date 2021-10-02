@@ -18,7 +18,12 @@ namespace IntermediateMediatorStudyCase.Structural
             colleague.SetMediator(this);
             this.colleagues.Add(colleague);
         }
-
+        public T CreateColleague<T>() where T:Colleague, new()
+        {
+            var c = new T();
+            c.SetMediator(this);
+            return c;
+        }
 
         public override void Send(string message, Colleague colleague)
         {
