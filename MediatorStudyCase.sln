@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorStudyCase", "Mediat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntermediateMediatorStudyCase", "IntermediateMediatorStudyCase\IntermediateMediatorStudyCase.csproj", "{E1BC891B-5317-4AFE-BF86-058301D47E01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationSystem", "CommunicationSystem\CommunicationSystem.csproj", "{903D2177-AF19-4C0D-957E-AC5801614D3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E1BC891B-5317-4AFE-BF86-058301D47E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1BC891B-5317-4AFE-BF86-058301D47E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1BC891B-5317-4AFE-BF86-058301D47E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903D2177-AF19-4C0D-957E-AC5801614D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903D2177-AF19-4C0D-957E-AC5801614D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903D2177-AF19-4C0D-957E-AC5801614D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903D2177-AF19-4C0D-957E-AC5801614D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
