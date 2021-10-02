@@ -9,26 +9,29 @@ namespace CommunicationSystem
     public abstract class TeamMember
     {
 
-        public readonly string _name;
-        private MessageHub _messageHub;
+        private MessageHub messageHub;
 
         public TeamMember(string name)
         {
-            _name = name;
+            this.name = name;
         }
+
+        public readonly string name;
 
         internal void InitializeMessageHub(MessageHub hub)
         {
-            _messageHub = hub;
+            this.messageHub = hub;
         }
 
         public void Send(string message)
         {
-            _messageHub.Send(_name, message);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            this.messageHub.Send(this.name, message);
         }
 
         public virtual void Recieve(string from, string message)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"From {from}: '{message}");
         }
 

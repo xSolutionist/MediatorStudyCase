@@ -8,16 +8,16 @@ namespace CommunicationSystem
 {
     public class TeamMessageHub : MessageHub
     {
-        private List<TeamMember> _members = new();
+        private List<TeamMember> members = new();
         public override void RegisterSingle(TeamMember member)
         {
             member.InitializeMessageHub(this);
-            _members.Add(member);
+            this.members.Add(member);
         }
 
         public override void Send(string from, string message)
         {
-            _members.ForEach(m => m.Recieve(from, message));
+            this.members.ForEach(m => m.Recieve(from, message));
         }
 
         public void RegisterMultiple(params TeamMember[] teamMembers)
